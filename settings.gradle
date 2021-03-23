@@ -1,0 +1,4 @@
+rootProject.name = 'micro-architecture'
+include 'jpa-template-multi-ds'
+include 'rest-template'
+

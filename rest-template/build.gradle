@@ -1,0 +1,10 @@
+group 'song.pan.toolkit.web.rest'
+version '1.0.0'
+
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    compile 'io.springfox:springfox-swagger2:2.9.2'
+    compile 'io.springfox:springfox-swagger-ui:2.9.2'
+    compile 'com.google.guava:guava:30.1-jre'
+}
