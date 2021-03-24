@@ -18,7 +18,7 @@ import song.pan.toolkit.web.rest.domain.ApiResponse;
  * @version 1.0.0
  */
 @RestControllerAdvice
-public class ApiResponseConverter implements ResponseBodyAdvice<Object> {
+public class ResponseConverter implements ResponseBodyAdvice<Object> {
 
 
     /**
