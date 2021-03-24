@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 @Getter
 @Setter
 public class ApiResponse<T> {
+    private String id;
     private Boolean succ;
     private Integer code;
     private String msg;

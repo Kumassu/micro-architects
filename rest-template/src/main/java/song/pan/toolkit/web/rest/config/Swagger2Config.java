@@ -72,6 +72,7 @@ public class Swagger2Config {
         List<SecurityReference> basic = List.of(new SecurityReference("Basic", new AuthorizationScope[]{}));
         securityContexts.add(securityContext("/api/v*/books", basic, HttpMethod.GET));
         securityContexts.add(securityContext("/api/v*/books/*", basic, HttpMethod.GET));
+        securityContexts.add(securityContext("/api/v*/caches", basic, HttpMethod.GET));
         securityContexts.add(securityContext("/api/v*/books", bearer, HttpMethod.POST));
         securityContexts.add(securityContext("/api/v*/books", bearer, HttpMethod.PUT));
         securityContexts.add(securityContext("/api/v*/books", bearer, HttpMethod.PATCH));
