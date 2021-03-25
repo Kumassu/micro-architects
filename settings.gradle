@@ -1,4 +1,5 @@
 rootProject.name = 'micro-architecture'
-include 'jpa-template-multi-ds'
+include 'jpa-template'
 include 'rest-template'
+include 'mybatis-template'
 

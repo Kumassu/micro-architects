@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    # 这是 spring boot DataSource 自动装配的格式
+#    driver-Class-Name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/world?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: 123456
+
+    # 这是使用 DataSourceBuilder.create().build() 的格式
+    driverClassName: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://localhost:3306/world?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+# 单个数据源使用自动装配直接在此配置，如果是多数据源需要自己注入 SqlSessionFactory 进行配置
+#mybatis:
+#    type-aliases-package: song.pan.toolkit.mybatis.entity
+#    mapper-locations: classpath:mapper/*.xml
+#    config-location: classpath:mybatis-confg.xml
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+# 日志
+logging:
+  config: classpath:logback.xml
+  level:
+    root: info
+    song.pan: info
+
+
+
+
