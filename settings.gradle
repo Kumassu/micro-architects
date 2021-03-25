@@ -2,4 +2,5 @@ rootProject.name = 'micro-architecture'
 include 'jpa-template'
 include 'rest-template'
 include 'mybatis-template'
+include 'qrcode-util'
 

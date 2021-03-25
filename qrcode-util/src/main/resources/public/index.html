@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qrcode</title>
+</head>
+<body>
+<div>
+    <input id="input" type="text" placeholder="contents">
+    <input id="generate" type="button" value="generate">
+</div>
+
+<div id="qrcode">
+    <img id="qrcodeImage" >
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+$("#generate").click(function(){
+    if ($("#input").val()) {
+        $("#qrcodeImage").attr("src","/api/v1/qrcodes?content=" + $("#input").val());
+    }
+});
+</script>
+</body>
+</html>
