@@ -3,4 +3,5 @@ include 'jpa-template'
 include 'rest-template'
 include 'mybatis-template'
 include 'qrcode-util'
+include 'common'
 
