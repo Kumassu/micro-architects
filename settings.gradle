@@ -4,4 +4,6 @@ include 'rest-template'
 include 'mybatis-template'
 include 'qrcode-util'
 include 'common'
+include 'redis-template'
+include 'spring-boot-template'
 

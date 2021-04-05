@@ -1,0 +1,6 @@
+
+
+application:
+  properties:
+    name: spring-boot-template
+    version: 1.0.0
