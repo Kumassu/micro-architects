@@ -1,0 +1,8 @@
+group 'song.pan.toolkit.redis'
+version '1.0.0'
+
+dependencies {
+    implementation "redis.clients:jedis:3.6.0-RC1"
+    implementation "org.springframework.boot:spring-boot-starter-data-redis:${springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+}
