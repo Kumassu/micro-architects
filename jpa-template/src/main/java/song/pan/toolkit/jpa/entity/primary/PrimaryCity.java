@@ -27,4 +27,14 @@ public class PrimaryCity {
     @Column(name = "Population")
     private String population;
 
+    @Override
+    public String toString() {
+        return "PrimaryCity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", countryCode='" + countryCode + '\'' +
+                ", district='" + district + '\'' +
+                ", population='" + population + '\'' +
+                '}';
+    }
 }
